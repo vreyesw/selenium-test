@@ -6,12 +6,16 @@
   "configurations": [
     {
       "type": "node",
-      "request": "launch",
-      "name": "Launch Program",
+      "request": "attach",
+      "name": "Attach to Remote",
+      "address": "80.0.3987.16",
+      "port": 9515,
+      "localRoot": "${workspaceFolder}",
+      "remoteRoot": "320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}",
       "skipFiles": [
         "<node_internals>/**"
-      ],
-      "program": "${file}"
+      ]
     }
+        
   ]
 }
